@@ -1,0 +1,24 @@
+[package]
+name = "structopt-derive"
+version = "0.4.18"
+edition = "2018"
+authors = ["Manos Pitsidianakis <epilys@nessuent.xyz>", "Guillaume Pinot <texitoi@texitoi.eu>"]
+description = "Parse command line argument by defining a struct, derive crate."
+documentation = "https://docs.rs/structopt-derive"
+repository = "https://github.com/epilys/structopt-derive-manpage"
+keywords = ["clap", "cli", "derive", "docopt"]
+categories = ["command-line-interface"]
+license = "Apache-2.0/MIT"
+
+[dependencies]
+syn = { version = "1", features = ["full"] }
+quote = "1"
+proc-macro2 = "1"
+heck = "0.4.0"
+proc-macro-error = "1.0.0"
+
+[features]
+paw = []
+
+[lib]
+proc-macro = true
